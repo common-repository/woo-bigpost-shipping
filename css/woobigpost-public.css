@@ -1,0 +1,263 @@
+/** Common Quote form CSS **/
+.woobigpost-shipping-quote-form {
+    position: relative;
+	margin: 20px auto;
+	max-width: 100%;
+	width: 550px;
+	border: 1px solid #2c2d33;
+	border-radius: 5px;
+	float: right;
+}
+.woobigpost-shipping-quote-form.sqf-checkout-page {
+	width: 40%;
+	float: left;
+}
+#woobigpost-ajax-loader {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba( 255, 255, 255, 0.8);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 3;
+}
+.woobigpost-shipping-quote-form .woobigpost-sqf-title h2 {
+	margin: 0px;
+	padding: 15px 1.5em;
+	background: #2c2d33;
+	color: #ffffff;
+}
+.woobigpost-sqf-body{ padding: 15px 2em; }
+label.label-control{ display: block; font-weight: bold; }
+
+table.woobigpost-sqf-fields{ margin-bottom: 0; }
+table.woobigpost-sqf-fields,
+.woobigpost-sqf-fields td{ border: 0; }
+.woobigpost-sqf-fields td{ padding: 10px 0; }
+table.woobigpost-sqf-fields .sqf-opts{ display: none; }
+
+.woobigpost-sqf-fields input[type="radio"] {
+	/*visibility: hidden;*/
+	width: 25px;
+	height: 25px;
+    opacity: 0;
+    position: absolute;
+    z-index: 9999;
+
+}
+.woobigpost-sqf-fields label{ position: relative; cursor: pointer; }
+.woobigpost-sqf-fields input[type="radio"] {
+	margin-right: 2px;
+	vertical-align: middle;
+}
+.woobigpost-sqf-fields .radioitem{ margin-right: 10px; }
+.woobigpost-sqf-fields input[type="radio"] + label{
+    border: 1px solid #cccccc;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin: 0 2px 0 0;
+}
+
+.woobigpost-sqf-fields input[type="radio"]:checked + label:after {
+    content: "\2713";
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 100%;
+    position: absolute;
+    width: 25px;
+    text-align: center;
+    line-height: 22px;
+    left: 0;
+}
+/*.woobigpost-sqf-fields input[type="radio"]:before {
+	content: "";
+	background: #ffffff;
+	position: absolute;
+	border-radius: 100%;
+	border: 1px solid #cccccc;
+	visibility: visible;
+	width: 24px;
+	height: 24px;
+	line-height: 22px;
+	text-align: center;
+	left: 0px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.woobigpost-sqf-fields input[type="radio"]:checked:before {
+	content: "\2713";
+}*/
+.sqf-confirm-no td, .no_variation td, .no_variation span{ padding: 0; text-align: center; color: red; }
+.sqf-suburb-box input{ display: block; width: 100%; margin-top: 15px; }
+
+/** Suburb list **/
+#sqf-suburb-list {
+	list-style: none;
+	margin: 10px 0px;
+	max-width: 100%;
+	max-height: 325px;
+	overflow-x: scroll;
+	position: relative;
+}
+#sqf-suburb-list li {
+	margin-bottom: 5px;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+	padding: 2px 7px;
+	cursor: pointer;
+}
+#sqf-suburb-list li:hover {
+	background-color: #f2f2f2;
+}
+
+/** Shipping cost result **/
+#sqf-shipping-cost .shipping-type-result{ margin-top: 15px; }
+#sqf-shipping-cost .shipping-type-result h4 {
+	display: none;
+}
+/** Get Shipping status **/ 
+#get-quote-product-page {
+	position: relative;
+	margin: 20px auto;
+	max-width: 100%;
+	width: 550px;
+
+	border: 1px solid #2c2d33;
+	border-radius: 5px;
+}
+#get-quote-product-page input[type="text"]{ display: block; margin-bottom: 15px; width: 100%; }
+#get-quote-product-page h2 {
+	margin: 0px;
+	padding: 15px 1.5em;
+	background: #2c2d33;
+	color: #ffffff;
+}
+
+#get-quote-product-page .quote-row {
+	padding: 15px 2em;
+}
+
+.woobigpost-shipping-quote-form.cart {
+	width: 100%;
+	float: none;
+	border: none;
+	border-top: none;
+}
+
+.woobigpost-shipping-quote-form.cart .woobigpost-sqf-body {
+	padding: 0;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+#sqf-suburb-list li.active {
+  background-color: #f2f2f2;
+}
+
+.cart-bigpost-shipping td{
+    font-weight: 400 !important;
+}
+
+
+#bigpost_single_product_form #sqf-suburb-list input {
+	display: inline-block;
+    width: auto;
+}
+
+#bigpost_single_product_form .woobigpost-sqf-fields tr td,
+#bigpost_cart_form .woobigpost-sqf-fields tr td,
+#bigpost_checkout_form .woobigpost-sqf-fields tr td
+{
+    box-shadow: none !important;
+    border-top: none thick transparent !important;
+}
+
+#qq-popup-button{
+	text-decoration: none;
+}
+
+.blocker{
+	z-index: 2 !important;
+}
+
+#quick-quote-modal{
+	padding: 40px 0;
+    box-shadow: none;
+    background: transparent;
+    height: auto;
+    overflow: visible;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#quick-quote-modal:focus{
+	border: none;
+	outline: none;
+}
+
+#quick-quote-modal .woobigpost-sqf-body{
+	background: #fff;
+}
+
+.modal a.close-modal{
+	top: 5px !important;
+}
+
+body.modalOn{
+	overflow: hidden;
+}
+
+#bp-modal{
+	position: fixed;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    display: none;
+    text-align: center;
+}
+
+#quick-quote-modal .woobigpost-shipping-quote-form{
+	float: none;
+	border: none;
+	margin: 40px auto;
+}
+
+#qq-popup-close{
+	float: right;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loading_text{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    top: 50%;
+    padding: 8px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #quick-quote-modal{
+	width: 90%;
+  }
+}
